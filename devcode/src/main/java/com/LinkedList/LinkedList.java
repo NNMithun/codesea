@@ -57,5 +57,29 @@ public class LinkedList {
             temp.setNext(newNode);
         }
     }
+    public synchronized  Node removeFromBegin(){
+        Node node= head;
+        if(node!=null){
+            head= node.getNext();
+            node.setNext(null);
+        }
+        return node;
+
+    }
+    public synchronized  Node removeFromEnd(){
+        Node temp=head;
+        Node removedNode=null;
+        if(temp!=null){
+            while(temp.getNext().getNext()!=null){
+                temp= temp.getNext();
+            }
+            removedNode= temp.getNext();
+            temp.setNext(null);
+            length--;
+
+        }
+        return removedNode;
+
+    }
 
     }

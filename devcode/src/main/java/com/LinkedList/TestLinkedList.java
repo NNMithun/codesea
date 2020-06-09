@@ -14,6 +14,7 @@ public class TestLinkedList {
         ll.insertAtBegin(new Node(6));
         ll.insertAtBegin(new Node(7));
         ll.insertAtBegin(new Node(8));
+        ll.removeFromEnd();
 
         System.out.println(ll);
     }
