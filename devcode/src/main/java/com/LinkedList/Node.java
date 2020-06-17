@@ -2,7 +2,7 @@ package com.LinkedList;
 
 public class Node {
      private int num;
-     private Node next;
+     public Node next;
 
     public Node(int num) {
         this.num = num;

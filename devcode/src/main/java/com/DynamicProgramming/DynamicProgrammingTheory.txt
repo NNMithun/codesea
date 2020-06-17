@@ -2,3 +2,6 @@ Simple explanation for Dynamic Programming
 if a guy asked to calculate the sum of
 1+2+3+4+5=15
 If I say
+
+0 1 2 3 4
+0 1 1 2 3 5 8
